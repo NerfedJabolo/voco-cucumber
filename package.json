@@ -1,0 +1,30 @@
+{
+  "name": "cucumber-puppeteer-saucedemo",
+  "version": "1.0.0",
+  "description": "Cucumber + Puppeteer UI tests for the Sauce Demo e-commerce site",
+  "main": "src/config.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:parallel": "cucumber-js --parallel 2",
+    "test:dry": "cucumber-js --dry-run"
+  },
+  "keywords": [
+    "cucumber",
+    "puppeteer",
+    "bdd",
+    "e2e",
+    "saucedemo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "puppeteer": "^25.17.0"
+  },
+  "private": true,
+  "engines": {
+    "node": "22 || 24 || >=26"
+  }
+}
